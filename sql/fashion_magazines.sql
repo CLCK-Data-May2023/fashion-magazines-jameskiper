@@ -7,7 +7,7 @@ JOIN customers
 ON orders.customer_id = customers.customer_id
 JOIN subscriptions
 ON orders.subscription_id = subscriptions.subscription_id
-WHERE order_status = 'unpaid' AND subscriptions.description = 'Fashion Magazine';
+WHERE order_status = 'unpaid' AND subscriptions.description = 'Fashion Magazine'
 GROUP BY customers.customer_name;
 
 
